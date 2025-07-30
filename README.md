@@ -1,12 +1,19 @@
-# Micro-Commerce App
+# Deals On: Micro-Commerce App
 
-A full-stack e-commerce application built with **Flutter** (frontend) and **Node.js + Express** (backend) using **SQLite** database.
+A mobile e-commerce application built with **Flutter** (frontend) and **Node.js + Express** (backend) using **SQLite** database.
+
+<img src="images/login.png" alt="" width="150">
+<img src="images/home.png" alt="" width="150">
+<img src="images/admin_screen.png" alt="" width="150">
+<img src="images/crud.png" alt="" width="150">
+<img src="images/cart.png" alt="" width="150">
+<img src="images/order_history.png" alt="" width="150">
 
 ## 🚀 Features
 
 ### Core Functionality
 - **Authentication**: Email/password signup & login using JWT
-- **Product Management**: Browse, filter, and view products with pagination
+- **Product Management**: Browse and view products
 - **Shopping Cart**: Add/remove items, update quantities, calculate totals
 - **Order Management**: Create orders, view order history, inventory management
 - **Admin Panel**: Create, edit, delete products (admin-only access)
@@ -22,7 +29,7 @@ A full-stack e-commerce application built with **Flutter** (frontend) and **Node
 ## 🛠 Tech Stack
 
 ### Backend
-- **Runtime**: Node.js 18+
+- **Runtime**: Node.js 17+
 - **Framework**: Express.js
 - **Database**: SQLite
 - **Authentication**: JWT + bcryptjs
@@ -30,7 +37,7 @@ A full-stack e-commerce application built with **Flutter** (frontend) and **Node
 - **Validation**: Custom middleware
 
 ### Frontend
-- **Framework**: Flutter 3.x
+- **Framework**: Flutter >=3.x
 - **State Management**: Provider
 - **HTTP Client**: http package
 - **Local Storage**: SharedPreferences
@@ -38,21 +45,21 @@ A full-stack e-commerce application built with **Flutter** (frontend) and **Node
 ## 📦 Project Structure
 
 ```
-micro-commerce-app/
-├── server/                 # Node.js backend
-│   ├── routes/            # API endpoints
-│   ├── models/            # Database models
-│   ├── middleware/        # Auth & validation
-│   ├── tests/            # Test files
-│   └── data/             # Seed data
-└── client/               # Flutter frontend
+Deals On/
+├── server/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   ├── tests/
+│   └── data/
+└── client/
     ├── lib/
-    │   ├── models/       # Data models
-    │   ├── providers/    # State management
-    │   ├── screens/      # UI screens
-    │   ├── services/     # API services
-    │   └── widgets/      # Reusable components
-    └── assets/           # Images and resources
+    │   ├── models/
+    │   ├── providers/
+    │   ├── screens/
+    │   ├── services/
+    │   └── widgets/
+    └── assets/
 ```
 
 ## 🚦 Quick Start
@@ -66,8 +73,8 @@ micro-commerce-app/
 
 1. **Clone and navigate to server directory**
    ```bash
-   git clone <repository-url>
-   cd micro-commerce-app/server
+   git clone https://github.com/GChukwudi/Deals-On
+   cd Deals-On
    ```
 
 2. **Install dependencies**
@@ -142,34 +149,34 @@ The app comes with pre-seeded demo accounts:
 
 ### Authentication
 ```
-POST   /api/auth/register    # User registration
-POST   /api/auth/login       # User login
-GET    /api/auth/profile     # Get user profile
+POST   /api/auth/register
+POST   /api/auth/login
+GET    /api/auth/profile
 ```
 
 ### Products
 ```
-GET    /api/products         # Get all products (public)
-GET    /api/products/:id     # Get single product (public)
-POST   /api/products         # Create product (admin only)
-PUT    /api/products/:id     # Update product (admin only)
-DELETE /api/products/:id     # Delete product (admin only)
+GET    /api/products
+GET    /api/products/:id
+POST   /api/products
+PUT    /api/products/:id
+DELETE /api/products/:id
 ```
 
 ### Shopping Cart
 ```
-GET    /api/cart             # Get user's cart
-POST   /api/cart/items       # Add item to cart
-PUT    /api/cart/items/:id   # Update cart item quantity
-DELETE /api/cart/items/:id   # Remove item from cart
-DELETE /api/cart             # Clear entire cart
+GET    /api/cart
+POST   /api/cart/items
+PUT    /api/cart/items/:id
+DELETE /api/cart/items/:id
+DELETE /api/cart
 ```
 
 ### Orders
 ```
-GET    /api/orders           # Get user's orders
-POST   /api/orders           # Create order from cart
-GET    /api/orders/admin/all # Get all orders (admin only)
+GET    /api/orders
+POST   /api/orders
+GET    /api/orders/admin/all
 ```
 
 ### Example API Requests
@@ -227,7 +234,7 @@ The test suite includes:
 - **CORS Protection**: Configured CORS policy
 - **SQL Injection Prevention**: Parameterized queries
 
-## 📱 App Features
+## App Features
 
 ### User Flow
 1. **Authentication**: Login or register
