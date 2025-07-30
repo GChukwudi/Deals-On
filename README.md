@@ -295,4 +295,4 @@ This project is for assessment purposes.
 
 ---
 
-**Built with ❤️ for Kenkeputa Technical Assessment**
+**Built for Kenkeputa Technical Assessment**
