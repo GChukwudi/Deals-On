@@ -3,6 +3,7 @@
 A mobile e-commerce application built with **Flutter** (frontend) and **Node.js + Express** (backend) using **SQLite** database.
 
 <img src="images/login.png" alt="" width="150">
+<img src="images/register.png" alt="" width="150">
 <img src="images/home.png" alt="" width="150">
 <img src="images/admin_screen.png" alt="" width="150">
 <img src="images/crud.png" alt="" width="150">
